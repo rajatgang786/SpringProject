@@ -1,6 +1,6 @@
 package com.musejam.model.pricing;
 
-import com.musejam.model.taxation.GST;
+import com.musejam.table.taxation.GST;
 import com.musejam.table.pricing.AddOn;
 import com.musejam.table.pricing.Product;
 import lombok.Data;

@@ -23,18 +23,10 @@ public class PromotionFlowExecutorComponent {
              orderItems) {
 
             setSellingPriceOrderItem(orderItem);
-
         }
-
     }
-
-
 
     public void executeFlow(Cart cart) {
-
         setForOrderItems(cart.getOrderItems());
-
     }
-
-
 }

@@ -1,5 +1,6 @@
 package com.musejam.table.pricing;
 
+import com.musejam.model.pricing.DiscountDetails;
 import lombok.*;
 
 import javax.persistence.*;
@@ -18,6 +19,8 @@ public class ItemDetails {
     @Transient
     Double sellingPrice = 0D;
     @NotNull
-    String HSN;
+    String hsn;
+    @Transient
+    DiscountDetails discountDetails = new DiscountDetails();
 
 }

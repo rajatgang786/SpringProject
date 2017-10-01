@@ -1,7 +1,7 @@
 package com.musejam.component.pricing;
 
 import com.musejam.model.pricing.Cart;
-import com.musejam.model.taxation.GST;
+import com.musejam.table.taxation.GST;
 import com.musejam.model.pricing.OrderItem;
 import com.musejam.table.pricing.AddOn;
 import org.springframework.stereotype.Component;
