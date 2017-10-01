@@ -1,0 +1,17 @@
+spring :
+  datasource:
+      platform: postgres
+      type: com.zaxxer.hikari.HikariDataSource
+      testWhileIdle: true
+      url: jdbc:postgresql://localhost:5432/rajat
+      username: postgres
+      password: root
+      validationQuery: SELECT 1
+      hikari:
+        maximumPoolSize: 1
+      driverClassName: org.postgresql.Driver
+  jpa:
+      hibernate:
+        ddl-auto: create-drop
+      database: POSTGRESQL
+      show-sql: true

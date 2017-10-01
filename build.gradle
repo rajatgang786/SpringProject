@@ -1,0 +1,32 @@
+group 'Musejam'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.7.RELEASE'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    apply plugin: 'idea'
+    compile 'org.projectlombok:lombok:1.16.12'
+    // https://mvnrepository.com/artifact/org.yaml/snakeyaml
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.18'
+    // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
+    compile group: 'com.zaxxer', name: 'HikariCP', version: '2.2.5'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '1.5.7.RELEASE'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+// https://mvnrepository.com/artifact/postgresql/postgresql
+// https://mvnrepository.com/artifact/org.postgresql/postgresql
+ compile group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    //compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+
+
+}
